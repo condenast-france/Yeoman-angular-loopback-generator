@@ -8,8 +8,8 @@ What does it make
 -----------------
 
 We this starter, you have:
-* A Vagrant virtual box (with Nginx, nodejs installed and configured)
-* A provisioning on Vagrant
+* A Vagrant virtual box 
+* A provisioning on Vagrant (with Nginx, nodejs installed and configured)
 * A loopback API Framework installed
 * A angularJS pre-configured
 
