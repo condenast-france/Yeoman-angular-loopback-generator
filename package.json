@@ -23,7 +23,9 @@
     "loopback-boot": "^2.6.5",
     "loopback-component-explorer": "^2.1.0",
     "loopback-datasource-juggler": "^2.39.0",
-    "serve-favicon": "^2.0.1"
+    "serve-favicon": "^2.0.1",
+    "yeoman-generator": "^0.21.1",
+    "yo": "^1.4.8"
   },
   "devDependencies": {
     "grunt": "^0.4.5",
