@@ -1,5 +1,5 @@
-$HOSTNAME = "toolbox.dev"
-$NAME = "toolbox"
+$HOSTNAME = "test.dev"
+$NAME = "tAngularLoopback"
 $BOX = "ubuntu/trusty64"
 $IP = "10.0.0.50"
 $MEMORY = ENV.has_key?('VM_MEMORY') ? ENV['VM_MEMORY'] : "1024"
