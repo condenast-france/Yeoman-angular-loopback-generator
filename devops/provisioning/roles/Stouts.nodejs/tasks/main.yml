@@ -1,0 +1,11 @@
+---
+
+- include: nodejs.yml
+  when: nodejs_enabled
+  tags: [nodejs]
+
+- name: create log and pid folders
+  file: path={{ item }} owner=www-data group=www-data state=directory
+  with_items:
+    - "/var/log/nodejs"
+    - "/var/run/nodejs"

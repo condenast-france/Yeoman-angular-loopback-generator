@@ -1,0 +1,4 @@
+---
+- name: Configure NODE_ENV environment
+  lineinfile: dest=/etc/environment regexp="^NODE_ENV=" line="NODE_ENV={{ node_env }}"
+  when: node_env is defined

@@ -1,0 +1,23 @@
+---
+- name: Provision Toolbox web servers
+  hosts: webservers
+  sudo: true
+  vars:
+    timezone: Europe/Paris
+    project_name: Toolbox
+    port: 80
+  vars_files:
+      - vars/nodejs.yml
+
+  roles:
+    - { role: git }
+    - { role: www-data }
+    - { role: nginx, tags: nginx }
+    - { role: Stouts.nodejs, tags: nodejs }
+    - { role: node-env, tags: nodejs }
+
+- name: Provision ssh keys
+  hosts: all
+  sudo: true
+  roles:
+    - { role: ssh-keys, tags: ssh-keys }

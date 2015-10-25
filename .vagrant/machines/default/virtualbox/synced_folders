@@ -1,0 +1,1 @@
+{"nfs":{"/var/www/toolbox/current":{"type":"nfs","guestpath":"/var/www/toolbox/current","hostpath":"/Users/aouicher/WWW/toolbox","disabled":false,"map_uid":349799994,"map_gid":20,"nfs_udp":true,"nfs_version":3,"uuid":"2574703611"}}}

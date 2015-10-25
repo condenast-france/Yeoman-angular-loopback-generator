@@ -1,0 +1,5 @@
+---
+- include: default.yml
+
+- include: ssl.yml
+  when: ssl_cert_dir != ""

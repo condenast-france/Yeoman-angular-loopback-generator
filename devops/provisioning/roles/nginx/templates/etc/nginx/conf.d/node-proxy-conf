@@ -1,0 +1,11 @@
+# HTTP server
+server {
+	listen		80;
+	access_log	/var/log/nginx/toolbox.access.log;
+	error_log	/var/log/nginx/toolbox.error.log;
+	client_max_body_size 100M;
+
+  location / {
+  		proxy_pass http://127.0.0.1:3000;
+  	}
+}

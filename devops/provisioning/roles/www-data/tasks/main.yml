@@ -1,0 +1,6 @@
+---
+- name: creates group www-data
+  group: name=www-data state=present
+
+- name: creates user www-data
+  user: name=www-data group=www-data createhome=yes home=/var/www shell=/bin/bash

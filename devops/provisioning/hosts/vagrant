@@ -1,0 +1,12 @@
+[all:vars]
+ansible_ssh_user=vagrant
+
+[webservers]
+10.0.0.50
+
+[webservers:vars]
+ssl_cert_dir=
+node_env=dev
+
+[dbservers]
+10.0.0.50

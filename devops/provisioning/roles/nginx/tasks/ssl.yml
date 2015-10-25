@@ -1,0 +1,11 @@
+---
+- name: create ssl certificate directory
+  file: path={{ ssl_cert_dir }} state=directory
+
+- name: generate ssl certificate
+  command: openssl req -new -nodes -x509 -subj "/C=FR/ST=/L=Paris/O=IT/CN=${ ansible_fqdn }" -days 3650 -keyout {{ ssl_cert_dir }}/key.key -out {{ ssl_cert_dir }}/cert.pem -extensions v3_ca creates={{ ssl_cert_dir }}/cert.pem
+  notify: reload-nginx
+
+- name: add server main listener
+  template: src=etc/nginx/conf.d/secure-node-proxy-conf dest=/etc/nginx/conf.d/main.conf
+  notify: restart-nginx
