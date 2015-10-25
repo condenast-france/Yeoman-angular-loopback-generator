@@ -6,7 +6,7 @@ Development mode
 
 Run `grunt` for building and `grunt serve` for preview.
 
-
+Maybe you need to run `npm install` & `bower install`
 
 Build
 -----
