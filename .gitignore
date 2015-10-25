@@ -79,3 +79,6 @@ crashlytics-build.properties
 ### Vagrant template
 .vagrant/
 
+### DEVOPS
+devops/provisioning/roles/ssh-keys/files/authorized_keys
+
