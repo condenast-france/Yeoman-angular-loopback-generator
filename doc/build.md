@@ -3,10 +3,10 @@ Build & development
 
 Development mode
 ----------------
-
+Run `npm install` to install node modules
+Run `bower install` to install bower components
 Run `grunt` for building and `grunt serve` for preview.
 
-Maybe you need to run `npm install` & `bower install`
 
 Build
 -----
