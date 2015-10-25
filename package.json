@@ -8,6 +8,12 @@
     "stop": "for pid in `$(pwd)/node_modules/forever/bin/forever list | grep $PWD | awk {'print $7'}`; do $(pwd)/node_modules/forever/bin/forever stop $pid; done || true",
     "test": "grunt test"
   },
+  "contributors": [
+    {
+      "name": "Alexandre Ouicher",
+      "email": "aouicher@condenast.fr"
+    }
+  ],
   "dependencies": {
     "bower": "^1.6.5",
     "compression": "^1.0.3",
@@ -52,5 +58,9 @@
     "type": "git",
     "url": "git+https://github.com:condenastfr/Yeoman-angular-loopback-generator.git"
   },
+  "bugs": {
+    "url": "https://github.com/condenastfr/Yeoman-angular-loopback-generator/issues"
+  },
+  "homepage": "https://github.com/condenastfr/Yeoman-angular-loopback-generator#readme",
   "description": "Toolbox"
 }
