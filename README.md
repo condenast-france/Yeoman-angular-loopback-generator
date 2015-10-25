@@ -19,7 +19,7 @@ Documentation index
 
 * [Installation](doc/installation.md)
 * [Provisionning](doc/provisionning.md)
-* [Deployment(to be defined)]
+* [Deployment](doc/deployment.md)
 * [Build & development](doc/build.md)
 
 
