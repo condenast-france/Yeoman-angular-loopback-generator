@@ -7,9 +7,6 @@ Required
 * [Vagrant](https://www.vagrantup.com/)
 * [Ansible](http://www.ansible.com/)
 * [VirtualBox](https://www.virtualbox.org/)
-* [Yo](http://yeoman.io/)
-* [Ruby Gems](https://rubygems.org/)
-* [Compass](https://rubygems.org/gems/compass/)
 
 
 Install your dev environment
