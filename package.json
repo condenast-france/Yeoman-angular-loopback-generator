@@ -4,7 +4,7 @@
   "main": "src/server/server.js",
   "scripts": {
     "pretest": "jshint .",
-    "start": "forever start -a  --pidFile 95ans.pid $(pwd)/src/server/server.js",
+    "start": "forever start -a  --pidFile Toolbox.pid $(pwd)/src/server/server.js",
     "stop": "for pid in `$(pwd)/node_modules/forever/bin/forever list | grep $PWD | awk {'print $7'}`; do $(pwd)/node_modules/forever/bin/forever stop $pid; done || true",
     "test": "grunt test"
   },
@@ -49,8 +49,8 @@
     "time-grunt": "^1.0.0"
   },
   "repository": {
-    "type": "",
-    "url": ""
+    "type": "git",
+    "url": "git+https://github.com:condenastfr/Yeoman-angular-loopback-generator.git"
   },
   "description": "Toolbox"
 }
